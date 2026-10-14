@@ -1,0 +1,40 @@
+{
+  "run_at_utc": "2026-10-14T22:26:42.541956+05:30",
+  "target_readings_per_second": 10000,
+  "duration_seconds": 10.058,
+  "batch_size": 500,
+  "concurrent_request_limit": 32,
+  "submitted_readings": 117500,
+  "accepted_by_api": 117500,
+  "rejected_or_failed": 0,
+  "accepted_throughput_per_second": 11681.81,
+  "request_count": 236,
+  "request_latency_ms": {
+    "p50": 43.911,
+    "p95": 63.346,
+    "p99": 117.72,
+    "mean": 42.453
+  },
+  "server_metrics_at_end": {
+    "uptime_seconds": 35.265,
+    "queue_depth": 64578,
+    "queue_capacity": 100000,
+    "accepted_readings": 117501,
+    "persisted_readings": 51923,
+    "rejected_readings": 0,
+    "sqlite_flushes": 66,
+    "active_rules": 0,
+    "database_readings": 51923
+  },
+  "errors": [],
+  "interpretation": "Accepted means placed in the process-local queue, not synchronously committed to SQLite. Verify persisted_readings after the queue drains.",
+  "persistence_confirmation": {
+    "checked_at_utc": "2026-10-14T17:01:50.2346292Z",
+    "queue_depth": 0,
+    "accepted_readings": 117501,
+    "persisted_readings": 117501,
+    "rejected_readings": 0,
+    "database_readings": 117501,
+    "reading_count_includes_one_prior_alert_smoke_record": true
+  }
+}
